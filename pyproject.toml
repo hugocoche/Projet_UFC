@@ -1,18 +1,14 @@
-[tool.poetry]
+[project]
 name = "ufc fight predict"
 version = "0.1.0"
 description = "Web Scraping and Machine Learning package to predict ufc's fight resultt"
 authors = ["Jaillet Grégory and Cochereau Hugo"]
 readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.13"
-beautifulsoup4 = "^4.12.3"
-pandas = "^2.2.3"
-selenium = "^4.26.1"
-black = "^24.10.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=24.10.0",
+    "bs4>=0.0.2",
+    "pandas>=2.2.3",
+    "selenium>=4.27.1",
+]
